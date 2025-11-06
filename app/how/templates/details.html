@@ -33,12 +33,12 @@
       <section class="content">
         <h2>REGISTER</h2>
 
-        <h1>{{ User.usertname }} {{ User.password }}</h1>
+        <h1>{{ user.firstname }} {{ user.lastname }}</h1>
 
-        <p>Phone: {{ User.usertname }}</p>
-        <p>Member since: {{User.password }}</p>
+        <p>Phone: {{ user.phone }}</p>
+        <p>Member since: {{ user.joined_date }}</p>
 
-        <p>Back to <a href="/how">Members</a></p>
+        <p>Back to <a href="/member">Members</a></p>
       </section>
     </main>
     <footer>
