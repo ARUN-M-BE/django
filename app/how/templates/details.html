@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Register Form</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assest/css/style.css" />
+  </head>
+
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/faq">Register</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="content">
+        <h2>REGISTER</h2>
+
+        <h1>{{ User.usertname }} {{ User.password }}</h1>
+
+        <p>Phone: {{ User.usertname }}</p>
+        <p>Member since: {{User.password }}</p>
+
+        <p>Back to <a href="/how">Members</a></p>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Your Company. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="" async defer>
+      document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("Form submitted!");
+      });
+    </script>
+  </body>
+</html>
