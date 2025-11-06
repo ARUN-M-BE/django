@@ -4,20 +4,107 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Register Form</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assest/css/style.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <h1>FAQ</h1>
-        
-        <script src="" async defer></script>
-    </body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href=''>Home</a></li>
+                <li><a href="faq.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <h2>REGISTER</h2>
+
+            <form action="#" method="post">
+                
+                <div class="user">
+                    <label for="username">User Name:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="user">
+                    <label for="fathername">Father Name:</label>
+                    <input type="text" id="fathername" name="fathername" required>
+                </div>
+                <div class="user">
+                    <label for="mothername">Mother Name:</label>
+                    <input type="text" id="mothername" name="mothername" required>
+                </div>
+                <div>
+                    <label for="age">Age</label>
+                    <select name="age" id="age">
+                        <option value="select">Select age</option>
+                        <option value="below">Below 5</option>
+                        <option value="above">Above 5</option>
+                        <option value="18">18+</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="dob">Date Of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div>
+                    <label for="cource">Cource</label>
+                    <select name="cource" id="cource">
+                        <option value="select">Select cource</option>
+                        <option value="cource1">cource 1</option>
+                        <option value="cource2">cource 2</option>
+                        <option value="cource3">cource +</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="10">10 Mark</label>
+                    <input type="number" id="10" name="10" required>
+                </div>
+                <div>
+                    <label for="12">12 Mark</label>
+                    <input type="number" id="12" name="12" required>
+                </div>
+                <div>
+                    <label for="degree">Degree Percentage</label>
+                    <input type="number" id="degree" name="degree" required>
+                </div>
+                <div>
+                    <label for="regdate">Register Date</label>
+                    <p id="regdate" name="regdate">
+                        <script>
+                            document.write(new Date().toISOString().split('T')[0]);
+                        </script>
+                    </p>
+                </div>
+                <input type="submit" value="Register">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;
+            <script>
+                document.write(new Date().getFullYear());
+            </script> Your Company. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="" async defer>
+        document.querySelector('form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Form submitted!');
+        });
+    </script>
+</body>
+
 </html>
